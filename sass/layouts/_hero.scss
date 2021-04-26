@@ -1,0 +1,64 @@
+.hero {
+  display: flex;
+  background-color: var(--background-section-color);
+  text-align: center;  
+
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/hero/fonhero.jpg);
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;  
+
+  @media screen and (max-width: 480px), screen and (min-width: 480px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.hero__title {
+  color: var(--primary-write-color);
+  font-weight: var(--black-font-weight);
+  
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 480px), screen and (min-width: 480px) {
+  font-size: 26px;
+  line-height: 1.61;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.61;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  @extend %HoverFocus;
+}

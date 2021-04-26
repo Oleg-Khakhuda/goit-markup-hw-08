@@ -1,0 +1,37 @@
+.card-set {
+    padding-top: 94px;
+  }
+  
+  .card-set__projects {
+    display: flex;
+    justify-content: center;
+  
+    margin-bottom: 50px;  
+  }
+  
+  .card-set__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  .button__primary {
+    color: var(--title-text-color);
+    background-color: var(--background-button-color);
+    font-weight: var(--medium-font-weight);
+    line-height: 1.62;
+  
+  
+    &:hover,
+    &:focus {
+      color: var(--primary-write-color);
+      background-color: var(--accent-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);  
+    }
+  }
+  
+  .button__primary--active {
+    color: var(--primary-write-color);
+    background-color: var(--accent-color);
+    font-weight: var(--medium-font-weight);
+    line-height: 1.62;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+  }

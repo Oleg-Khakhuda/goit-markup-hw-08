@@ -1,0 +1,19 @@
+.logo {
+  font-family: raleway, sans-serif;
+  color: var(--logo-color);
+  font-weight: var(--bold-font-weight);
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  // padding-top: 24px;
+  // padding-bottom: 25px;
+  @media screen and (max-width: 480px), screen and (min-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.logo__first {
+  color: var(--accent-color);
+}
