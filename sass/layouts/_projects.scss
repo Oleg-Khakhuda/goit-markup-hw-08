@@ -32,6 +32,22 @@
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid #eeeeee;
+
+    @media screen and (min-width: 480px) {
+      flex-basis: 100%;
+      max-width: 450px;
+      
+    }
+  
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100%-30px) / 2); 
+      max-width: 354px;       
+    }
+  
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100%-60px) / 3);
+      max-width: 370px;         
+    }
   }
   
   .projects__overlay {

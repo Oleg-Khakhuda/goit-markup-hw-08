@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   background-position: center;  
 
-  @media screen and (max-width: 480px), screen and (min-width: 480px) {
+  @media screen and (min-width: 480px), screen and (max-width: 480px) {
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -42,15 +42,15 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 480px), screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
   font-size: 26px;
   line-height: 1.61;
   }
 
-  @media screen and (min-width: 768px) {
-    font-size: 26px;
-    line-height: 1.61;
-  }
+  // @media screen and (min-width: 768px) {
+  //   font-size: 26px;
+  //   line-height: 1.61;
+  // }
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;

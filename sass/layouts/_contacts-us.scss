@@ -25,11 +25,11 @@
     
   }
 
-  .contacts-us__item:not(:last-child) {
-    @media screen and (min-width: 768px) {
-    margin-bottom: 4px;
-    }
-  }
+  // .contacts-us__item:not(:last-child) {
+  //   @media screen and (min-width: 768px) {
+  //   margin-bottom: 4px;
+  //   }
+  // }
   
   .contacts-us__link {
     display: flex;

@@ -1,9 +1,5 @@
 .features {
-  @media screen and (max-width: 480px), screen and (min-width: 480px) {
-    padding-top: 60px;
-  }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     padding-top: 60px;
   }
 
@@ -28,7 +24,6 @@
 .features__item::before {
   content: "";
   display: inline-flex;
-  
   height: 120px;   
   background-repeat: no-repeat;
   background-position: center;  
@@ -45,7 +40,7 @@
     width: 354px;
   }
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     width: 270px;
   }
 }
@@ -99,10 +94,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    text-align: start;
-  }
-
-  @media screen and (min-width: 1200px) {
     text-align: start;
   }
 }

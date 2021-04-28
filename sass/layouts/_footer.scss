@@ -11,10 +11,9 @@
 }
   
 .footer__item {
-  @media screen and (max-width: 480px), screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     margin-left: auto;
     margin-right: auto;
-    // justify-content: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -24,25 +23,17 @@
     }
 
   @media screen and (min-width: 1200px) {
-      display: flex;
       justify-content: space-between;
       align-items: baseline;
     }
-  }
+}
 
-// .footer__item:not(:last-child) {
-//   margin-right: 165px;
-// }
 
 .footer__contacts {
-@media screen and (max-width: 480px), screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   text-align: center;
-  margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
-  margin-right: 165px;
-}
 
 @media screen and (min-width: 1200px) {
   margin-right: 0;
@@ -91,13 +82,9 @@
 }
 
 .connection {
-  @media screen and (max-width: 480px), screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     text-align: center;
     margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -140,15 +127,6 @@
   margin-right: 10px;
 }
 
-// .subscription {
-//   @media screen and (min-width: 768px) {
-//     display: block;
-//   }
-// }
-
-// .footer-adr:not(:last-child) {
-//   margin-right: 165px;
-// }
 
 
   
