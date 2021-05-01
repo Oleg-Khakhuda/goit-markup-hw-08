@@ -1,5 +1,9 @@
 .card-set {
     padding-top: 94px;
+
+    @media screen and (max-width: 1199.98px) {
+      padding-top: 60px;
+    }
   }
   
 .card-set__projects {
@@ -8,18 +12,14 @@
 
   margin-bottom: 50px;  
 
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: 1199.98px) {
     flex-wrap: wrap;
     justify-content: flex-start;
-  }
-
-  @media screen and (min-width: 768px) {
-    justify-content: center;
   }
 }
   
 .card-set__item:not(:last-child) {
-  @media screen and (min-width: 480px), screen and (max-width: 479.98px) {
+  @media screen and (max-width: 1199.98px) {
   margin-right: 8px;
   margin-bottom: 21px;
 }

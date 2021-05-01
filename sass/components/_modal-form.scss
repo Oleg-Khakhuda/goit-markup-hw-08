@@ -118,7 +118,11 @@
 
 .modal-form__checkbox-text {
   line-height: 1.71;
-  color: var(--primary-text-color);
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .modal-form__link {
