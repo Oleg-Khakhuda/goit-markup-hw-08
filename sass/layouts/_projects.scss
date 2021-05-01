@@ -27,14 +27,13 @@
   
   .projects__item {
     background-color: var(--primary-write-color);
-    flex-basis: calc((100%-60px) / 3);
-    max-width: 370px;
+    
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid #eeeeee;
 
-    @media screen and (min-width: 480px) {
-      flex-basis: 100%;
+    @media screen and (max-width: 767.98px) {
+      width: 100%;
       max-width: 450px;
       
     }
