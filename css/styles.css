@@ -222,7 +222,6 @@ img {
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 1;
   background-color: var(--primary-write-color);
   flex-direction: column;
   padding: 48px 40px 48px 40px;
@@ -280,8 +279,6 @@ img {
 
 .mobile-social__list {
   display: flex;
-  bottom: 48px;
-  justify-content: center;
 }
 
 .mobile-social__item {
@@ -347,12 +344,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .menu__item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
 .menu__link {
   display: block;
   padding-top: 32px;
@@ -387,7 +378,7 @@ img {
 .menu__link.current::after {
   content: '';
   position: absolute;
-  bottom: -1px;
+  bottom: -3px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -938,6 +929,30 @@ img {
   margin-bottom: -30px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .clients__item {
+    width: calc((100% - 60px) / 2);
+    max-width: 210px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+    max-width: 226px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    max-width: 170px;
+  }
+}
+
 .clients__link {
   display: inline-flex;
   width: 100%;
@@ -953,31 +968,6 @@ img {
 .clients__link:hover, .clients__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
-}
-
-@media screen and (max-width: 767.98px) {
-  .clients__item {
-    width: calc((100%-30px) / 2);
-    max-width: 210px;
-    width: 100%;
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .clients__item {
-    width: calc((100%-60px) / 3);
-    max-width: 226px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__item {
-    max-width: 170px;
-  }
 }
 
 .footer {
@@ -1220,14 +1210,7 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
-@media screen and (max-width: 480px), screen and (min-width: 480px) {
-  .subscription__button {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .subscription__button {
     margin-left: auto;
     margin-right: auto;
@@ -1431,15 +1414,13 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  z-index: 3;
   transition: opacity var(--main-transition);
   overflow-y: scroll;
-}
-
-@media screen and (max-width: 767.98px) {
-  .backdrop {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  padding-top: 50%;
+  padding-bottom: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .backdrop.is-hidden {
@@ -1453,10 +1434,8 @@ img {
 }
 
 .modal {
-  position: absolute;
   left: 50%;
   top: 50%;
-  width: 528px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1469,14 +1448,22 @@ img {
   transition: transform var(--main-transition);
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 768px) {
+  .modal {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .modal {
     position: absolute;
-    left: 50%;
-    top: 50%;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .modal {
     max-width: 450px;
     width: 100%;
-    transform: translate(-50%, -50%);
   }
 }
 

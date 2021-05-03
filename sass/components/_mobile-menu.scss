@@ -5,7 +5,6 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 1;
     background-color: var(--primary-write-color);
     flex-direction: column;
 
@@ -65,12 +64,7 @@
 }
 
 .mobile-social__list {
-    
     display: flex;
-    bottom: 48px;
-    
-    justify-content: center;
-    
 }
 
 .mobile-social__item {
