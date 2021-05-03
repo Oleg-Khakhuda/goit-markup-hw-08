@@ -9,23 +9,51 @@
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)), 
-    url(../images/hero/fonhero.jpg);
+    url(../images/hero/mobile/mobile_fonhero.jpg);
   
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;  
 
-  @media screen and (min-width: 480px), screen and (max-width: 480px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+     url(../images/hero/mobile/mobile_fonhero@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/hero/tablet/tablet_fonhero.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: 
+      linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+      url(../images/hero/tablet/tablet_fonhero@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/hero/desktop/desktop_fonhero.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: 
+      linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+      url(../images/hero/desktop/desktop_fonhero@2x.jpg);
+    }
+
     padding-top: 200px;
     padding-bottom: 200px;
   }
