@@ -11,12 +11,10 @@
 }
 
 .team__list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
   
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-  
-
   @media screen and (min-width: 768px) {
     margin-right: -30px;
     margin-bottom: -30px;
@@ -74,10 +72,10 @@
   @media screen and (min-width: 480px) {
     display: inline-flex;
   }
-}
 
-.team__social-item:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
   .team__heading {

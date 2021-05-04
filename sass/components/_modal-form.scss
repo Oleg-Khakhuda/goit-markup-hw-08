@@ -107,7 +107,7 @@
 
 .modal-form__icon-check {
   display: inline-block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   background-image: url(../images/icons/border-check.svg);
   background-color: #fff;
