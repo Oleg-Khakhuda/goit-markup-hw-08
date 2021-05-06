@@ -1414,6 +1414,13 @@ img {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .projects__text {
+    padding: 77px 24px 77px 24px;
+    font-size: 18px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects__text {
     padding: 49px 24px 49px 24px;
