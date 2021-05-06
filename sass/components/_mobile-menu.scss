@@ -13,6 +13,7 @@
     padding: 48px 40px 48px 40px;
 
     &.is-open {
+        position: fixed;
         display: flex;
         z-index: 1;
     }
@@ -38,6 +39,10 @@
     &.current {
         color: var(--accent-color);
     }
+
+    @media screen and (max-width: 479.98px) {
+        font-size: 36px;
+    }
 }
 
 .mobile-contacts__list {
@@ -56,6 +61,10 @@
     letter-spacing: 0.02em;
 
     color: var(--accent-color);
+
+    @media screen and (max-width: 479.98px) {
+        font-size: 26px;
+    }
 }
 
 .mobile-mail__link {
@@ -80,6 +89,10 @@
         border-right: 1px solid rgba(33, 33, 33, 0.2);
         padding-right: 10px;
         margin-right: 10px;
+    }
+
+    @media screen and (max-width: 479.98px) {
+        font-size: 10px;
     }
 }
 
