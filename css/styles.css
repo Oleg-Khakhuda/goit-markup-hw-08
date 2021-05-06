@@ -1428,7 +1428,15 @@ img {
   transform: translate(-50%, -50%) scale(1.02);
 }
 
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .modal {
+  position: relative;
   left: 50%;
   top: 50%;
   background-color: #FFFFFF;
@@ -1443,22 +1451,9 @@ img {
   transition: transform var(--main-transition);
 }
 
-@media screen and (max-width: 768px) {
-  .modal {
-    position: relative;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .modal {
-    position: absolute;
-  }
-}
-
 @media screen and (max-width: 1199.98px) {
   .modal {
     max-width: 450px;
-    width: 100%;
   }
 }
 
