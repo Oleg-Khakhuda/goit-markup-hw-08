@@ -399,8 +399,6 @@ img {
 @media screen and (min-width: 768px) {
   .contacts-us__list {
     display: inline;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
 }
 
@@ -421,6 +419,13 @@ img {
 @media screen and (max-width: 1199.98px) {
   .contacts-us__item:not(:last-child) {
     margin-bottom: 10px;
+    padding-top: 21px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .contacts-us__item:not(:first-child) {
+    padding-bottom: 21px;
   }
 }
 
