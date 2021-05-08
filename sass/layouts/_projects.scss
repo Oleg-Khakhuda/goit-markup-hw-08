@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap; 
   
-    margin-right: -30px;
+    margin-left: -30px;
     margin-bottom: -30px;
   }
   
@@ -28,24 +28,21 @@
   .projects__item {
     background-color: var(--primary-write-color);
     
-    margin-right: 30px;
+    margin-left: 30px;
     margin-bottom: 30px;
     border: 1px solid #eeeeee;
 
     @media screen and (max-width: 767.98px) {
       width: 100%;
       max-width: 450px;
-      
     }
   
     @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 30px) / 2); 
-      max-width: 354px;       
+      flex-basis: calc((100% - 60px) / 2);        
     }
   
     @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 60px) / 3);
-      max-width: 370px;         
+      flex-basis: calc((100% - 90px) / 3);        
     }
   }
   
@@ -75,7 +72,6 @@
 
     @media screen and (min-width: 480px) {
       padding: 77px 24px 77px 24px;
-      font-size: 18px;
     }
 
     @media screen and (min-width: 768px) {
